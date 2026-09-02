@@ -5,10 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Sharanya Guduri Photography</title>
+    <title>Bloom Tales | Sharanya Guduri Photography</title>
 
     <style>
-
         * {
             box-sizing: border-box;
         }
@@ -20,63 +19,111 @@
         body {
             margin: 0;
             font-family: Arial, sans-serif;
-            color: #222;
-            background-color: #ffffff;
+            color: #352f2a;
+            background-color: #fffdf8;
         }
+
+        /* Header */
 
         header {
             display: flex;
             justify-content: space-between;
             align-items: center;
-            padding: 35px 6%;
-            border-bottom: 1px solid #eeeeee;
+            padding: 24px 6%;
+            border-bottom: 1px solid #eee7dc;
         }
 
-        .name h1 {
-            margin: 0;
+        .brand {
             font-family: Georgia, serif;
-            font-size: 28px;
-            letter-spacing: 4px;
-            font-weight: normal;
-        }
-
-        .name p {
-            margin-top: 8px;
-            margin-bottom: 0;
-            letter-spacing: 7px;
-            font-size: 11px;
-            color: #777;
+            font-size: 18px;
+            letter-spacing: 1px;
         }
 
         nav a {
-            margin-left: 30px;
+            margin-left: 28px;
             text-decoration: none;
-            color: #333;
-            font-size: 13px;
+            color: #4d443c;
+            font-size: 12px;
             letter-spacing: 1px;
         }
 
         nav a:hover {
-            color: #999;
+            color: #a47c48;
         }
+
+        /* Hero */
+
+        .hero {
+            text-align: center;
+            padding: 65px 20px 50px;
+            background:
+                radial-gradient(circle at top left, #f5ead8 0, transparent 35%),
+                radial-gradient(circle at bottom right, #f7eee2 0, transparent 35%),
+                #fffdf8;
+        }
+
+        .small-leaf {
+            font-size: 25px;
+            color: #a47c48;
+            margin-bottom: 10px;
+        }
+
+        .hero h1 {
+            margin: 0;
+            font-family: Georgia, serif;
+            font-size: clamp(48px, 7vw, 88px);
+
+            /* Small spacing — not stretched out */
+            letter-spacing: 2px;
+
+            font-weight: normal;
+            color: #3b3028;
+        }
+
+        .tagline {
+            margin-top: 18px;
+            color: #a47c48;
+            font-size: 14px;
+            letter-spacing: 5px;
+        }
+
+        .hero-line {
+            width: 80px;
+            height: 1px;
+            background-color: #c8a97e;
+            margin: 25px auto;
+        }
+
+        .hero-text {
+            margin: 0;
+            font-family: Georgia, serif;
+            font-style: italic;
+            font-size: 17px;
+            color: #70645a;
+        }
+
+        /* Portfolio */
 
         .portfolio-title {
             text-align: center;
-            padding: 55px 20px 35px;
+            padding: 55px 20px 30px;
         }
 
         .portfolio-title h2 {
+            margin: 0;
             font-family: Georgia, serif;
-            letter-spacing: 7px;
-            font-size: 30px;
+            font-size: 24px;
             font-weight: normal;
-            margin-bottom: 15px;
+            letter-spacing: 4px;
         }
 
         .portfolio-title p {
-            color: #666;
-            font-size: 15px;
+            margin-top: 12px;
+            color: #8a7b6d;
+            font-size: 13px;
         }
+
+        /* Gallery */
 
         .gallery {
             width: 92%;
@@ -84,7 +131,11 @@
             margin: auto;
             display: grid;
             grid-template-columns: repeat(4, 1fr);
-            gap: 30px 18px;
+            gap: 35px 18px;
+        }
+
+        .photo-card {
+            overflow: hidden;
         }
 
         .photo-card img {
@@ -92,36 +143,40 @@
             height: 330px;
             object-fit: cover;
             cursor: pointer;
-            transition: transform 0.3s ease;
+            border-radius: 3px;
+            transition: transform 0.35s ease;
         }
 
         .photo-card img:hover {
-            transform: scale(1.02);
+            transform: scale(1.025);
         }
 
         .photo-card h3 {
-            margin: 12px 0 5px;
-            font-size: 14px;
+            margin: 13px 0 6px;
+            font-family: Georgia, serif;
+            font-size: 15px;
             font-weight: normal;
         }
 
         .photo-card p {
             margin: 0;
-            color: #666;
+            color: #756b62;
             font-size: 13px;
-            line-height: 1.5;
+            line-height: 1.6;
         }
+
+        /* About */
 
         .about {
             margin-top: 90px;
-            padding: 70px 10%;
-            background-color: #faf9f7;
+            padding: 75px 10%;
+            background-color: #f8f1e7;
         }
 
         .about h2,
         .contact h2 {
             font-family: Georgia, serif;
-            letter-spacing: 5px;
+            letter-spacing: 3px;
             font-weight: normal;
             font-size: 23px;
         }
@@ -129,22 +184,57 @@
         .about p {
             max-width: 650px;
             line-height: 1.8;
-            color: #555;
+            color: #62584f;
             font-size: 15px;
         }
 
+        /* Contact */
+
         .contact {
             padding: 70px 10%;
-            min-height: 180px;
+            text-align: center;
         }
+
+        .contact-links {
+            margin-top: 25px;
+        }
+
+        .contact-links a {
+            display: inline-block;
+            margin: 8px 18px;
+            color: #5b4a3d;
+            text-decoration: none;
+            border-bottom: 1px solid #c8a97e;
+            padding-bottom: 4px;
+            font-size: 14px;
+        }
+
+        .contact-links a:hover {
+            color: #a47c48;
+        }
+
+        /* Photographer */
+
+        .photographer {
+            text-align: center;
+            padding: 25px 20px 40px;
+            font-family: Georgia, serif;
+            font-style: italic;
+            color: #796959;
+            font-size: 17px;
+        }
+
+        /* Footer */
 
         footer {
             text-align: center;
-            padding: 30px;
-            border-top: 1px solid #eeeeee;
+            padding: 28px 20px;
+            border-top: 1px solid #eee4d8;
             font-size: 12px;
-            color: #777;
+            color: #84776b;
         }
+
+        /* Photo popup */
 
         .lightbox {
             display: none;
@@ -154,7 +244,7 @@
             top: 0;
             width: 100%;
             height: 100%;
-            background-color: rgba(0, 0, 0, 0.92);
+            background-color: rgba(30, 26, 22, 0.94);
             justify-content: center;
             align-items: center;
         }
@@ -173,8 +263,9 @@
             cursor: pointer;
         }
 
-        @media screen and (max-width: 900px) {
+        /* Tablet */
 
+        @media screen and (max-width: 900px) {
             .gallery {
                 grid-template-columns: repeat(2, 1fr);
             }
@@ -185,15 +276,30 @@
             }
 
             nav {
-                margin-top: 25px;
+                margin-top: 20px;
             }
 
             nav a {
-                margin: 0 12px;
+                margin: 0 10px;
             }
         }
 
+        /* Phone */
+
         @media screen and (max-width: 600px) {
+            .hero {
+                padding: 50px 15px 40px;
+            }
+
+            .hero h1 {
+                font-size: 45px;
+                letter-spacing: 1px;
+            }
+
+            .tagline {
+                font-size: 11px;
+                letter-spacing: 3px;
+            }
 
             .gallery {
                 grid-template-columns: 1fr;
@@ -203,15 +309,11 @@
                 height: auto;
             }
 
-            .name h1 {
-                font-size: 22px;
-            }
-
-            .portfolio-title h2 {
-                font-size: 24px;
+            nav a {
+                font-size: 10px;
+                margin: 0 6px;
             }
         }
-
     </style>
 </head>
 
@@ -219,9 +321,8 @@
 
 <header>
 
-    <div class="name">
-        <h1>SHARANYA GUDURI</h1>
-        <p>PHOTOGRAPHY</p>
+    <div class="brand">
+        BLOOM TALES
     </div>
 
     <nav>
@@ -232,25 +333,41 @@
 
 </header>
 
-<section class="portfolio-title" id="portfolio">
 
-    <h2>PORTFOLIO</h2>
+<section class="hero">
 
-    <p>
+    <div class="small-leaf">❦</div>
+
+    <h1>BLOOM TALES</h1>
+
+    <div class="tagline">
+        LIGHT • LIFE • MOMENTS
+    </div>
+
+    <div class="hero-line"></div>
+
+    <p class="hero-text">
         The things that make me stop and look for a few seconds.
     </p>
 
 </section>
 
+
+<section class="portfolio-title" id="portfolio">
+
+    <h2>MOMENTS</h2>
+
+    <p>A collection of little things that caught my eye.</p>
+
+</section>
+
+
 <main class="gallery">
 
     <div class="photo-card">
-
-        <img
-            src="rose[1].jpg"
-            alt="Red rose after rain"
-            onclick="openPhoto(this)"
-        >
+        <img src="rose[1].jpg"
+             alt="Red rose after rain"
+             onclick="openPhoto(this)">
 
         <h3>After the Rain</h3>
 
@@ -258,16 +375,13 @@
             Tiny drops resting on the petals.
             One of those little details that caught my eye.
         </p>
-
     </div>
 
-    <div class="photo-card">
 
-        <img
-            src="candle[1].jpg"
-            alt="Candle in a dark room"
-            onclick="openPhoto(this)"
-        >
+    <div class="photo-card">
+        <img src="candle[1].jpg"
+             alt="Candle in a dark room"
+             onclick="openPhoto(this)">
 
         <h3>A Quiet Light</h3>
 
@@ -275,16 +389,13 @@
             Just a small flame in a quiet room.
             Simple, warm and peaceful.
         </p>
-
     </div>
 
-    <div class="photo-card">
 
-        <img
-            src="moon[1].jpg"
-            alt="Moon behind tree branches"
-            onclick="openPhoto(this)"
-        >
+    <div class="photo-card">
+        <img src="moon[1].jpg"
+             alt="Moon behind tree branches"
+             onclick="openPhoto(this)">
 
         <h3>Moon Through the Branches</h3>
 
@@ -292,16 +403,13 @@
             The moon looked different through the bare branches.
             I stopped for a moment to capture it.
         </p>
-
     </div>
 
-    <div class="photo-card">
 
-        <img
-            src="bird-sunset[1].jpg"
-            alt="Bird sitting against sunset sky"
-            onclick="openPhoto(this)"
-        >
+    <div class="photo-card">
+        <img src="bird-sunset[1].jpg"
+             alt="Bird sitting against sunset sky"
+             onclick="openPhoto(this)">
 
         <h3>A Little Pause</h3>
 
@@ -309,16 +417,13 @@
             One bird, a quiet wire and a sky full of color.
             Sometimes that is enough.
         </p>
-
     </div>
 
-    <div class="photo-card">
 
-        <img
-            src="beach-sunset[1].jpg"
-            alt="Beach during sunset"
-            onclick="openPhoto(this)"
-        >
+    <div class="photo-card">
+        <img src="beach-sunset[1].jpg"
+             alt="Beach during sunset"
+             onclick="openPhoto(this)">
 
         <h3>Where the Sky Meets the Sea</h3>
 
@@ -326,16 +431,13 @@
             The last light of the day reflecting on the water.
             A view I wanted to remember.
         </p>
-
     </div>
 
-    <div class="photo-card">
 
-        <img
-            src="autumn-street[1].jpg"
-            alt="Street during autumn"
-            onclick="openPhoto(this)"
-        >
+    <div class="photo-card">
+        <img src="autumn-street[1].jpg"
+             alt="Street during autumn"
+             onclick="openPhoto(this)">
 
         <h3>Autumn Streets</h3>
 
@@ -343,16 +445,13 @@
             Colors, old buildings and a quiet autumn day.
             Sometimes the street itself becomes the picture.
         </p>
-
     </div>
 
-    <div class="photo-card">
 
-        <img
-            src="autumn-leaf[1].jpg"
-            alt="Autumn leaf"
-            onclick="openPhoto(this)"
-        >
+    <div class="photo-card">
+        <img src="autumn-leaf[1].jpg"
+             alt="Autumn leaf"
+             onclick="openPhoto(this)">
 
         <h3>Holding Autumn</h3>
 
@@ -360,16 +459,13 @@
             One leaf carrying so many shades of the season.
             Small things can be beautiful too.
         </p>
-
     </div>
 
-    <div class="photo-card">
 
-        <img
-            src="dandelion[1].jpg"
-            alt="Dandelion flowers"
-            onclick="openPhoto(this)"
-        >
+    <div class="photo-card">
+        <img src="dandelion[1].jpg"
+             alt="Dandelion flowers"
+             onclick="openPhoto(this)">
 
         <h3>Ready for the Wind</h3>
 
@@ -377,16 +473,13 @@
             Soft, delicate and almost ready to disappear.
             Nature changes quickly.
         </p>
-
     </div>
 
-    <div class="photo-card">
 
-        <img
-            src="pink-flower[1].jpg"
-            alt="Pink flower after rain"
-            onclick="openPhoto(this)"
-        >
+    <div class="photo-card">
+        <img src="pink-flower[1].jpg"
+             alt="Pink flower after rain"
+             onclick="openPhoto(this)">
 
         <h3>Fresh After Rain</h3>
 
@@ -394,16 +487,13 @@
             Rain made the flower look brighter and softer.
             A simple moment from nature.
         </p>
-
     </div>
 
-    <div class="photo-card">
 
-        <img
-            src="city-lights[1].jpg"
-            alt="City skyline at night"
-            onclick="openPhoto(this)"
-        >
+    <div class="photo-card">
+        <img src="city-lights[1].jpg"
+             alt="City skyline at night"
+             onclick="openPhoto(this)">
 
         <h3>City Lights</h3>
 
@@ -411,33 +501,53 @@
             The city looked completely different after dark.
             Lights reflected quietly across the water.
         </p>
-
     </div>
 
 </main>
 
+
 <section class="about" id="about">
 
-    <h2>ABOUT ME</h2>
+    <h2>ABOUT</h2>
 
     <p>
-        I simply enjoy photography.
-        It makes me slow down and notice the little things around me —
-        light, colors, nature and everyday moments.
-        These are some of the moments that caught my attention.
+        I simply enjoy photography. It makes me slow down and notice
+        the little things around me — light, colors, nature and everyday
+        moments. Bloom Tales is a collection of some of those moments
+        that made me stop and look a little longer.
     </p>
 
 </section>
+
 
 <section class="contact" id="contact">
 
     <h2>CONTACT</h2>
 
+    <div class="contact-links">
+
+        <a href="mailto:bloomtales@gmail.com">
+            Email
+        </a>
+
+        <a href="#">
+            Instagram
+        </a>
+
+    </div>
+
 </section>
 
+
+<div class="photographer">
+    Photography by Sharanya Guduri
+</div>
+
+
 <footer>
-    © 2026 Sharanya Guduri
+    © Sharanya Guduri Photography — Moments noticed, memories kept. All rights reserved.
 </footer>
+
 
 <div class="lightbox" id="lightbox">
 
@@ -447,20 +557,16 @@
 
 </div>
 
+
 <script>
 
     function openPhoto(image) {
-
         document.getElementById("lightbox").style.display = "flex";
-
         document.getElementById("largePhoto").src = image.src;
-
     }
 
     function closePhoto() {
-
         document.getElementById("lightbox").style.display = "none";
-
     }
 
 </script>
