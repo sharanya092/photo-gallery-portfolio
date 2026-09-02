@@ -24,9 +24,6 @@
             background-color: #ffffff;
         }
 
-
-        /* Header */
-
         header {
             display: flex;
             justify-content: space-between;
@@ -51,9 +48,6 @@
             color: #777;
         }
 
-
-        /* Navigation */
-
         nav a {
             margin-left: 30px;
             text-decoration: none;
@@ -65,9 +59,6 @@
         nav a:hover {
             color: #999;
         }
-
-
-        /* Portfolio heading */
 
         .portfolio-title {
             text-align: center;
@@ -87,14 +78,10 @@
             font-size: 15px;
         }
 
-
-        /* Gallery */
-
         .gallery {
             width: 92%;
             max-width: 1400px;
             margin: auto;
-
             display: grid;
             grid-template-columns: repeat(4, 1fr);
             gap: 30px 18px;
@@ -105,7 +92,6 @@
             height: 330px;
             object-fit: cover;
             cursor: pointer;
-
             transition: transform 0.3s ease;
         }
 
@@ -125,9 +111,6 @@
             font-size: 13px;
             line-height: 1.5;
         }
-
-
-        /* About */
 
         .about {
             margin-top: 90px;
@@ -150,16 +133,10 @@
             font-size: 15px;
         }
 
-
-        /* Contact */
-
         .contact {
             padding: 70px 10%;
             min-height: 180px;
         }
-
-
-        /* Footer */
 
         footer {
             text-align: center;
@@ -169,23 +146,15 @@
             color: #777;
         }
 
-
-        /* Large photo popup */
-
         .lightbox {
             display: none;
-
             position: fixed;
             z-index: 1000;
-
             left: 0;
             top: 0;
-
             width: 100%;
             height: 100%;
-
             background-color: rgba(0, 0, 0, 0.92);
-
             justify-content: center;
             align-items: center;
         }
@@ -199,14 +168,10 @@
             position: absolute;
             top: 25px;
             right: 40px;
-
             color: white;
             font-size: 40px;
             cursor: pointer;
         }
-
-
-        /* Tablet */
 
         @media screen and (max-width: 900px) {
 
@@ -227,9 +192,6 @@
                 margin: 0 12px;
             }
         }
-
-
-        /* Phone */
 
         @media screen and (max-width: 600px) {
 
@@ -253,9 +215,7 @@
     </style>
 </head>
 
-
 <body>
-
 
 <header>
 
@@ -272,8 +232,6 @@
 
 </header>
 
-
-
 <section class="portfolio-title" id="portfolio">
 
     <h2>PORTFOLIO</h2>
@@ -284,15 +242,12 @@
 
 </section>
 
-
-
 <main class="gallery">
-
 
     <div class="photo-card">
 
         <img
-            src="Photoroom_20240424_165011.jpeg"
+            src="rose[1].jpg"
             alt="Red rose after rain"
             onclick="openPhoto(this)"
         >
@@ -306,12 +261,10 @@
 
     </div>
 
-
-
     <div class="photo-card">
 
         <img
-            src="IMG_9297.jpeg"
+            src="candle[1].jpg"
             alt="Candle in a dark room"
             onclick="openPhoto(this)"
         >
@@ -325,12 +278,10 @@
 
     </div>
 
-
-
     <div class="photo-card">
 
         <img
-            src="IMG_3987.jpeg"
+            src="moon[1].jpg"
             alt="Moon behind tree branches"
             onclick="openPhoto(this)"
         >
@@ -344,12 +295,10 @@
 
     </div>
 
-
-
     <div class="photo-card">
 
         <img
-            src="IMG_4669.jpeg"
+            src="bird-sunset[1].jpg"
             alt="Bird sitting against sunset sky"
             onclick="openPhoto(this)"
         >
@@ -363,12 +312,10 @@
 
     </div>
 
-
-
     <div class="photo-card">
 
         <img
-            src="IMG_0585.jpeg"
+            src="beach-sunset[1].jpg"
             alt="Beach during sunset"
             onclick="openPhoto(this)"
         >
@@ -382,12 +329,10 @@
 
     </div>
 
-
-
     <div class="photo-card">
 
         <img
-            src="IMG_1946.jpeg"
+            src="autumn-street[1].jpg"
             alt="Street during autumn"
             onclick="openPhoto(this)"
         >
@@ -401,12 +346,10 @@
 
     </div>
 
-
-
     <div class="photo-card">
 
         <img
-            src="Photoroom_20240509_162931.jpeg"
+            src="autumn-leaf[1].jpg"
             alt="Autumn leaf"
             onclick="openPhoto(this)"
         >
@@ -420,12 +363,10 @@
 
     </div>
 
-
-
     <div class="photo-card">
 
         <img
-            src="Photoroom_20240429_114924.jpeg"
+            src="dandelion[1].jpg"
             alt="Dandelion flowers"
             onclick="openPhoto(this)"
         >
@@ -439,12 +380,10 @@
 
     </div>
 
-
-
     <div class="photo-card">
 
         <img
-            src="IMG_20200816_200825_369_Original.jpeg"
+            src="pink-flower[1].jpg"
             alt="Pink flower after rain"
             onclick="openPhoto(this)"
         >
@@ -458,12 +397,10 @@
 
     </div>
 
-
-
     <div class="photo-card">
 
         <img
-            src="IMG_0547.jpeg"
+            src="city-lights[1].jpg"
             alt="City skyline at night"
             onclick="openPhoto(this)"
         >
@@ -477,10 +414,7 @@
 
     </div>
 
-
 </main>
-
-
 
 <section class="about" id="about">
 
@@ -495,25 +429,15 @@
 
 </section>
 
-
-
 <section class="contact" id="contact">
 
     <h2>CONTACT</h2>
 
 </section>
 
-
-
 <footer>
-
     © 2026 Sharanya Guduri
-
 </footer>
-
-
-
-<!-- Photo popup -->
 
 <div class="lightbox" id="lightbox">
 
@@ -522,8 +446,6 @@
     <img id="largePhoto" alt="Large photograph">
 
 </div>
-
-
 
 <script>
 
@@ -535,7 +457,6 @@
 
     }
 
-
     function closePhoto() {
 
         document.getElementById("lightbox").style.display = "none";
@@ -544,7 +465,5 @@
 
 </script>
 
-
 </body>
-
 </html>
